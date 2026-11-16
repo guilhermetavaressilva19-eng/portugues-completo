@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Portfólio escolar de Guilherme Tavares — LEGACY 2026.">
+  <title>Guilherme Tavares | LEGACY 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="progress"></div>
+
+  <header class="header">
+    <a href="#inicio" class="logo">GT<span>.</span></a>
+
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="nav"
+    >☰</button>
+
+    <nav id="nav" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#redacoes">Redações</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PÁGINA INICIAL -->
+    <section id="inicio" class="hero">
+      <div class="hero-glow"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <span class="eyebrow">PORTFÓLIO ESCOLAR • 2026</span>
+
+          <h1>GUILHERME <span>TAVARES.</span></h1>
+
+          <p class="hero-subtitle">
+            Minha história, minhas experiências e tudo
+            o que aprendi ao longo da minha trajetória escolar.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-gold" href="#trajetoria">
+              Minha trajetória ↗
+            </a>
+            <a class="btn btn-outline" href="#redacoes">
+              Minhas redações
+            </a>
+          </div>
+        </div>
+
+        <!-- AS DUAS FOTOS NA PÁGINA INICIAL -->
+        <div class="hero-photos reveal">
+          <figure class="hero-photo-item">
+            <img
+              src="interagindo.jpg"
+              alt="Guilherme na educação infantil, no Interagindo"
+              loading="eager"
+            >
+            <figcaption>INTERAGINDO</figcaption>
+          </figure>
+
+          <figure class="hero-photo-item">
+            <img
+              src="energia-ativa.jpg"
+              alt="Guilherme no Colégio Energia Ativa"
+              loading="eager"
+            >
+            <figcaption>ENERGIA ATIVA</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>LEGACY 2026</span>
+        <span>ROLE PARA EXPLORAR ↓</span>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section about">
+      <div class="container">
+        <span class="eyebrow reveal">01 / QUEM SOU EU</span>
+
+        <div class="about-layout">
+          <h2 class="section-title reveal">
+            Minha história.<br>
+            <em>Minha trajetória.</em>
+          </h2>
+
+          <div class="about-text reveal">
+            <p>
+              Meu nome é <strong>Guilherme Tavares</strong>
+              e este site representa um pouco da minha
+              trajetória como estudante.
+            </p>
+            <p>
+              Ao longo dos anos, passei por diferentes escolas,
+              conheci pessoas, fiz amizades e vivi experiências
+              que contribuíram para minha formação.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section id="trajetoria" class="section journey">
+      <div class="container">
+        <span class="eyebrow reveal">02 / MINHA JORNADA</span>
+
+        <h2 class="section-title reveal">
+          Cada escola,<br>
+          <em>um capítulo.</em>
+        </h2>
+
+        <p class="section-description reveal">
+          Minha caminhada desde o jardim de infância
+          até o Ensino Médio.
+        </p>
+
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- REDAÇÕES -->
+    <section id="redacoes" class="section essays">
+      <div class="container">
+        <span class="eyebrow reveal">03 / PRODUÇÃO TEXTUAL</span>
+
+        <h2 class="section-title reveal">
+          Minhas ideias.<br>
+          <em>Minhas palavras.</em>
+        </h2>
+
+        <p class="section-description reveal">
+          Onze redações sobre temas importantes
+          da sociedade contemporânea.
+        </p>
+
+        <div class="essay-toolbar">
+          <input
+            id="search"
+            type="search"
+            placeholder="Pesquisar redações..."
+            aria-label="Pesquisar redações"
+          >
+          <span id="essayCount">11 redações</span>
+        </div>
+
+        <div id="essayGrid" class="essay-grid"></div>
+      </div>
+    </section>
+
+    <!-- ENCERRAMENTO -->
+    <section class="ending">
+      <div class="container reveal">
+        <span class="eyebrow">MEU PRÓXIMO CAPÍTULO</span>
+
+        <h2>Minha história<br><em>continua.</em></h2>
+
+        <p>
+          Tudo o que vivi até aqui faz parte de quem sou.
+          Ainda tenho muito para aprender, viver e conquistar.
+        </p>
+
+        <a class="btn btn-gold" href="#inicio">
+          Voltar ao início ↑
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <strong>GT<span>.</span></strong>
+      <p>Guilherme Tavares — LEGACY 2026</p>
+      <span>MINHA HISTÓRIA. MINHA TRAJETÓRIA.</span>
+    </div>
+  </footer>
+
+  <!-- JANELA DAS REDAÇÕES -->
+  <dialog id="essayDialog" class="essay-dialog">
+    <div class="dialog-header">
+      <span id="dialogNumber" class="eyebrow"></span>
+      <button
+        id="closeDialog"
+        class="close-dialog"
+        type="button"
+        aria-label="Fechar redação"
+      >×</button>
+    </div>
+
+    <div class="dialog-body">
+      <h2 id="dialogTitle"></h2>
+      <div id="dialogText" class="dialog-text"></div>
+
+      <div id="editorArea" class="editor-area" hidden>
+        <label for="essayTitle">Título</label>
+        <input id="essayTitle" type="text">
+
+        <label for="essayText">Redação completa</label>
+        <textarea id="essayText" rows="14"></textarea>
+      </div>
+
+      <p id="saveStatus" class="save-status"></p>
+
+      <div class="dialog-actions">
+        <button
+          id="editEssay"
+          class="btn btn-outline"
+          type="button"
+        >Editar texto</button>
+
+        <button
+          id="saveEssay"
+          class="btn btn-gold"
+          type="button"
+          hidden
+        >Salvar</button>
+
+        <button
+          id="cancelDialog"
+          class="btn btn-outline"
+          type="button"
+        >Fechar</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
