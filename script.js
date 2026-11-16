@@ -298,17 +298,6 @@ function mostrarEscolas() {
 
     conteudo.append(fase, titulo, historia);
 
-    // AS FOTOS TAMBÉM APARECEM NA TRAJETÓRIA
-    if (escola.foto) {
-      const foto = document.createElement("img");
-
-      foto.src = escola.foto;
-      foto.alt = `Foto da trajetória no ${escola.nome}`;
-      foto.className = "foto-escola";
-      foto.loading = "lazy";
-
-      conteudo.appendChild(foto);
-    }
 
     card.append(numero, conteudo);
     timeline.appendChild(card);
